@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4a1222">
+<title>Vikas & Varsha — Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
+:root{--wine:#4b1222;--wine2:#7d2840;--cream:#fbf1df;--paper:#fffaf1;--gold:#c9a45e;--gold2:#e2c78d;--ink:#34232a;--muted:#765d66;--line:#dfcda9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e8d8c8;color:var(--ink);font-family:Montserrat,Arial,sans-serif;overflow-x:hidden}.hide{display:none!important}button,a{font:inherit}.page{max-width:520px;margin:0 auto;background:var(--paper);min-height:100svh;box-shadow:0 0 80px #2a101c35;position:relative;overflow:hidden}.page:before,.page:after{content:"";position:absolute;z-index:5;pointer-events:none;top:0;bottom:0;width:18px;background:repeating-linear-gradient(135deg,transparent 0 9px,#c9a45e20 10px 11px)}.page:before{left:0}.page:after{right:0}
+/* OPENING */
+.cover{min-height:100svh;background:radial-gradient(circle at 50% 38%,#8d3b52 0,#5e172c 34%,#2c0815 100%);color:#fff7ea;display:grid;place-items:center;padding:22px;position:relative;overflow:hidden}.cover:before{content:"";position:absolute;width:420px;height:420px;border:1px solid #d9b87340;border-radius:50%;top:-180px;left:-180px;box-shadow:300px 500px 0 -80px #d9b8730c}.cover:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #d9b87330;border-radius:50%;right:-180px;bottom:-160px}.cover-card{width:min(430px,100%);min-height:690px;border:1px solid #d8b76f99;outline:1px solid #d8b76f2e;outline-offset:-11px;background:#ffffff08;backdrop-filter:blur(5px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:45px 28px;position:relative;z-index:2}.mini{font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold2)}.floral{font-family:Georgia,serif;color:var(--gold2);font-size:38px;margin:14px}.script{font-family:'Great Vibes',cursive;font-weight:400}.cover h1{font-size:76px;line-height:.82;margin:20px 0 14px}.cover .amp{font-family:'Cormorant Garamond',serif;font-size:35px;color:var(--gold2)}.cover .sub{font-family:'Cormorant Garamond',serif;font-size:23px}.cover .place{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#e6d1a5}.goldline{width:90px;height:1px;background:var(--gold);margin:20px auto}.open{width:92px;height:92px;border-radius:50%;border:1px solid var(--gold2);background:#fff1d4;color:var(--wine);font-size:10px;font-weight:600;letter-spacing:.1em;cursor:pointer;box-shadow:0 0 0 0 #d6b56b66;animation:pulse 2.3s infinite;margin-top:26px}.hint{font-size:8px;letter-spacing:.17em;text-transform:uppercase;color:#d8c49c;margin-top:16px}
+@keyframes pulse{50%{box-shadow:0 0 0 18px #d6b56b00}}
+/* PAGE TRANSITION */
+.transition{position:fixed;inset:0;background:linear-gradient(115deg,#310916 0,#7a2840 48%,#fff7e8 49%,#fffaf1 100%);z-index:100;transform:translateX(-105%);pointer-events:none}.transition.go{animation:turn 1.15s cubic-bezier(.72,0,.2,1) forwards}@keyframes turn{0%{transform:translateX(-105%)}48%{transform:translateX(0)}100%{transform:translateX(105%)}}
+/* MAIN */
+.music{position:fixed;right:max(15px,calc((100vw - 520px)/2 + 15px));top:15px;width:44px;height:44px;border-radius:50%;border:1px solid #c9a45e99;background:#4b1222eF;color:#fff1d3;z-index:30;cursor:pointer;box-shadow:0 7px 20px #0004}.music.playing{animation:rotate 3s linear infinite}@keyframes rotate{to{transform:rotate(360deg)}}
+section{padding:82px 27px;position:relative;overflow:hidden}section:before{content:"❦";position:absolute;top:24px;left:50%;transform:translateX(-50%);color:var(--gold);font-size:19px}.hero{min-height:100svh;background:radial-gradient(circle at 50% 18%,#7c3148,#4a1022 62%,#2b0814);color:#fff8eb;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}.hero:after{content:"";position:absolute;width:370px;height:370px;border:1px solid #d6b46b27;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%)}.hero .mini{color:#dfc589}.hero h2{font-size:78px;line-height:.8;margin:23px 0}.hero .names{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.05}.hero small{font-family:Montserrat;font-size:8px;letter-spacing:.08em;color:#e0cda6}.hero .date{font-size:10px;letter-spacing:.25em;color:#e3ca8e;margin-top:30px}.scroll{font-size:8px;letter-spacing:.22em;text-transform:uppercase;opacity:.65;margin-top:55px}
+.intro,.family{background:var(--cream);text-align:center}.kicker{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--wine2)}h3{font-family:'Cormorant Garamond',serif;color:var(--wine);font-size:48px;line-height:.95;margin:14px 0 20px;font-weight:600}.body{font-family:'Cormorant Garamond',serif;font-size:23px;line-height:1.42}.parents{font-size:12px;line-height:1.8;color:var(--muted)}
+.events{background:var(--paper)}.section-head{text-align:center}.event{background:#fffdf8;border:1px solid var(--line);margin:20px 0;padding:34px 20px;text-align:center;position:relative;box-shadow:0 18px 38px #4b12220d;opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.8,.2,1)}.event.show{opacity:1;transform:none}.event:nth-child(2){transition-delay:.08s}.event:nth-child(3){transition-delay:.16s}.event:nth-child(4){transition-delay:.24s}.event:before,.event:after{content:"❦";position:absolute;color:#c9a45e70;font-size:19px}.event:before{top:8px;left:10px}.event:after{bottom:5px;right:10px;transform:rotate(180deg)}.event h4{font-family:'Cormorant Garamond',serif;color:var(--wine);font-size:37px;margin:0 0 9px}.meta{font-size:11px;line-height:1.9;color:#67545c}.meta b{color:var(--wine)}.actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:17px}.action{border:1px solid #ccb98e;color:var(--wine);text-decoration:none;background:#fffaf0;padding:10px 13px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.countdown{background:linear-gradient(145deg,#3a0b19,#75253c);color:#fff;text-align:center}.countdown h3{color:#fff}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:28px}.box{border:1px solid #a86d7c66;background:#ffffff08;padding:16px 3px}.box b{display:block;font-family:'Cormorant Garamond',serif;font-size:31px}.box span{font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:#dfc78f}.family-card{margin-top:24px;padding:30px;border:1px solid var(--line);background:#fffaf0}.family-card p{font-family:'Cormorant Garamond',serif;font-size:27px;margin:8px}.final{min-height:480px;background:linear-gradient(145deg,#300815,#70253b);color:#fff;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}.final h3{color:#fff;font-size:55px}.final .script{font-size:67px;color:#f3dfb2}.final .date{font-size:10px;letter-spacing:.18em;color:#dec58b}footer{background:#24060e;color:#cbb994;text-align:center;font-size:8px;letter-spacing:.16em;text-transform:uppercase;padding:25px}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s}.reveal.show{opacity:1;transform:none}.petal{position:fixed;top:-25px;width:9px;height:13px;background:#8b334b40;border-radius:80% 20% 80% 20%;z-index:10;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translate(var(--drift),110vh) rotate(500deg);opacity:0}}
+.back{position:fixed;right:max(15px,calc((100vw - 520px)/2 + 15px));bottom:18px;width:42px;height:42px;border-radius:50%;border:1px solid var(--gold);background:#fff8e9eF;color:var(--wine);z-index:25;opacity:0;transform:translateY(12px);transition:.3s}.back.show{opacity:1;transform:none}
+@media(min-width:700px){body{padding:28px 0}.page{border-radius:30px}.music{position:fixed}.cover{min-height:calc(100vh - 56px)}.hero{min-height:780px}}
+@media(max-width:380px){.cover h1{font-size:63px}.hero h2{font-size:64px}.timer{gap:4px}section{padding-left:23px;padding-right:23px}}
+</style>
+</head>
+<body>
+<div class="transition" id="transition"></div>
+<div class="page" id="page">
+<audio id="music" preload="auto" loop><source src="gpt.mp3" type="audio/mpeg"></audio>
+<section class="cover" id="cover">
+  <div class="cover-card">
+    <div class="mini">Wedding Invitation</div>
+    <div class="floral">❧</div>
+    <h1 class="script">Vikas <span class="amp">&amp;</span><br>Varsha</h1>
+    <div class="sub">With the blessings of our families</div>
+    <div class="goldline"></div>
+    <div class="place">Mithi • Tharparkar</div>
+    <button class="open" id="openBtn">OPEN</button>
+    <div class="hint">Tap to enter &amp; play music</div>
+  </div>
+</section>
+<div id="invitation" class="hide">
+<button class="music" id="musicBtn" aria-label="Play music">♫</button>
+<section class="hero reveal">
+  <div class="mini">A new beginning</div>
+  <div class="floral">❧</div>
+  <h2 class="script">Vikas &amp;<br>Varsha</h2>
+  <div class="names">Vikas Shivani<br><small>S/o Piyaro Shivani</small><br><br>♡<br><br>Varsha Amrani<br><small>D/o Harji Amrani</small></div>
+  <div class="date">19 — 21 NOVEMBER 2026</div>
+  <div class="scroll">Scroll to explore ↓</div>
+</section>
+<section class="intro reveal">
+  <div class="kicker">Dear Guests</div><h3>With joyful hearts</h3><div class="goldline"></div>
+  <p class="body">We invite you to join us as we celebrate the beautiful beginning of a new journey together.</p>
+  <p class="parents">Your presence, blessings and love will make our celebration truly special.</p>
+</section>
+<section class="events">
+  <div class="section-head"><div class="kicker">Save the dates</div><h3>Wedding Celebrations</h3></div>
+  <div class="event"><h4>Mehndi</h4><div class="meta"><b>19 November 2026</b><br>Time &amp; location to be announced</div></div>
+  <div class="event"><h4>Lunch Celebration</h4><div class="meta"><b>19 November 2026 • 12:00 PM – 4:00 PM</b><br>Tarachand Community Hall<br>Near Shivalay Mandir, Mithi</div><div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tarachand+Community+Hall+Mithi+Sindh">Open Map</a><a class="action" href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20261119T120000%0ADTEND:20261119T160000%0ASUMMARY:Vikas%20%26%20Varsha%20Wedding%20Lunch%0ALOCATION:Tarachand%20Community%20Hall%2C%20Mithi%0AEND:VEVENT%0AEND:VCALENDAR">Add Calendar</a></div></div>
+  <div class="event"><h4>Barat</h4><div class="meta"><b>21 November 2026</b><br>Chehlar, District Tharparkar</div><div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Chehlar+Tharparkar+Sindh">Open Map</a></div></div>
+</section>
+<section class="countdown reveal"><div class="kicker" style="color:#dfc78f">The countdown begins</div><h3>Until our celebration</h3><div class="timer"><div class="box"><b id="days">--</b><span>Days</span></div><div class="box"><b id="hours">--</b><span>Hours</span></div><div class="box"><b id="mins">--</b><span>Minutes</span></div><div class="box"><b id="secs">--</b><span>Seconds</span></div></div></section>
+<section class="family reveal"><div class="kicker">With love from</div><h3>Shivani Family</h3><div class="family-card"><p>Vikas Shivani</p><p>&amp;</p><p>Varsha Amrani</p></div></section>
+<section class="final reveal"><div class="floral">❦</div><div class="kicker" style="color:#dfc78f">Thank you for celebrating with us</div><h3>See you there</h3><div class="script">Vikas &amp; Varsha</div><div class="date">19 — 21 NOVEMBER 2026</div></section>
+<footer>With love • Shivani Family</footer>
+</div>
+</div>
+<button class="back" id="backBtn" aria-label="Back to top">↑</button>
+<script>
+const cover=document.getElementById('cover'),inv=document.getElementById('invitation'),music=document.getElementById('music'),openBtn=document.getElementById('openBtn'),musicBtn=document.getElementById('musicBtn'),transition=document.getElementById('transition'),backBtn=document.getElementById('backBtn');
+openBtn.addEventListener('click',async()=>{transition.classList.add('go');try{await music.play();musicBtn.classList.add('playing')}catch(e){}setTimeout(()=>{cover.classList.add('hide');inv.classList.remove('hide');window.scrollTo(0,0)},520);setTimeout(()=>transition.classList.remove('go'),1250)});
+musicBtn.addEventListener('click',async()=>{if(music.paused){try{await music.play()}catch(e){}musicBtn.classList.add('playing');musicBtn.textContent='♫'}else{music.pause();musicBtn.classList.remove('playing');musicBtn.textContent='🔇'}});
+const target=new Date('2026-11-19T12:00:00+05:00').getTime();function tick(){let n=Math.max(0,target-Date.now()),d=Math.floor(n/86400000);n%=86400000;let h=Math.floor(n/3600000);n%=3600000;let m=Math.floor(n/60000),s=Math.floor((n%60000)/1000);document.getElementById('days').textContent=d;document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('mins').textContent=String(m).padStart(2,'0');document.getElementById('secs').textContent=String(s).padStart(2,'0')}tick();setInterval(tick,1000);
+const revealIO=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal,.event').forEach(el=>revealIO.observe(el));
+window.addEventListener('scroll',()=>backBtn.classList.toggle('show',scrollY>500),{passive:true});backBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+function petal(){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.setProperty('--drift',(Math.random()*180-90)+'px');p.style.animationDuration=(7+Math.random()*5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),13000)}setInterval(petal,1800);for(let i=0;i<5;i++)setTimeout(petal,i*400);
+</script>
+</body>
+</html>
